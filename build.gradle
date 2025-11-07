@@ -72,7 +72,7 @@ task buildInfo {
     if (System.getenv().BUILD_NUMBER != null) {
         ext.buildNum = "${System.getenv().BUILD_NUMBER}"
     } else {
-        ext.buildNum = "DEV.${project.buildInfo.revision}"
+        ext.buildNum = "92"  // Custom build number for local builds
     }
 }
 ext.artifact_version = 'NFG'
